@@ -1,0 +1,12 @@
+{
+  "name": "bayut-zoho-public-reference",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "description": "Public scheduled inquiry synchronization reference",
+  "scripts": {
+    "check": "node --check src/index.js && node --check src/core.js && node --check src/zoho.js",
+    "test": "node --test"
+  },
+  "engines": {"node": ">=20"}
+}

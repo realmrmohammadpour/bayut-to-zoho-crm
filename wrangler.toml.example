@@ -1,0 +1,17 @@
+name = "provider-zoho-reference"
+main = "src/index.js"
+compatibility_date = "2026-10-01"
+
+[triggers]
+crons = ["*/15 * * * *"]
+
+[[d1_databases]]
+binding = "DB"
+database_name = "REPLACE_WITH_YOUR_D1_NAME"
+database_id = "00000000-0000-0000-0000-000000000000"
+
+[vars]
+# HTTPS endpoint on a provider API that you are permitted to access.
+INQUIRIES_API_URL = "https://api.example.invalid/inquiries"
+ZOHO_EXTERNAL_ID_FIELD = "External_Inquiry_ID"
+ZOHO_COMPANY_LABEL = "Inbound Inquiry"
